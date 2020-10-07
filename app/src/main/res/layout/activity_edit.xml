@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/regForm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo"></ImageView>
+
+            <TextView
+                android:id="@id/pic"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Change Profile Picture"
+                android:gravity="center"
+                android:layout_below="@+id/image"
+                >
+
+            </TextView>
+
+
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_below="@+id/pic"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/secondNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Second Name"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_below="@+id/nameEditText"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_below="@+id/secondNameEditText"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/Password2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Old Password"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_below="@+id/Password"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/PasswordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Password"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_below="@+id/Password2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/EmailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_below="@+id/PasswordEditText"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/cityEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="city"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_below="@+id/EmailEditText"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/genderEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:imeOptions="actionDone"
+                android:inputType=""
+                android:maxLines="1"
+                android:layout_below="@+id/cityEditText"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:text="Date of birth"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/genderEditText"
+                android:textSize="20dp">
+
+
+
+
+            </TextView>
+            <DatePicker
+                android:id="@+id/simpleDatePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:datePickerMode="spinner"
+                android:layout_below="@+id/date"
+                android:calendarViewShown="false"
+                android:layout_centerHorizontal="true"
+                />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text="Save"
+                android:layout_below="@+id/simpleDatePicker"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"></Button>
+
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
